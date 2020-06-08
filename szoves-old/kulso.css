@@ -1,0 +1,8 @@
+h2 { font-size: 24px; color: #555753; }
+h1 { font-size: 16px; color: #555753; }
+ p { font-size: 16px; color: #555753; }
+/* p { margin: 0px 0px 0px 0px; } */
+/* felsõ margó, jobb margó, alsó margó, bal margó */ 
+ body {
+ font-family: "Times New Roman", Times, serif; font-style: italic;
+ }
