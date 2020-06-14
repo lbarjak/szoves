@@ -7,19 +7,20 @@
     <META NAME="AUTHOR" CONTENT="Laszlo Barjak">
     <META name="keywords" lang="hu" content="szalagszövés, számítógép">
     <META name="keywords" lang="en" content="weaving, programming, Processing, P5.js">
-    <META name="description" content="Játék szövéssel, számítógéppel, programozás gyerekeknek, második rész. Mintapéldák Processing, P5.js kódban">
+    <META name="description"
+        content="Játék szövéssel, számítógéppel, programozás gyerekeknek, második rész. Mintapéldák Processing, P5.js kódban">
     <link rel="stylesheet" type="text/css" href="kulso.css">
 </head>
 
 <body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <div id="linkek">
         <iframe src=linkek.html style="position: absolute; width: 150px; height: 100%; border: none"></iframe>
     </div>
@@ -30,11 +31,18 @@
 
             <h1>Játék szövéssel, számítógéppel, programozás gyerekeknek, második rész</h1>
             <h2>Az első részben leírt módszer folytatása mai eszközökkel</h2>
-            <h2>Első rész <A HREF="szoves-old" TARGET="_blank">Játék szövéssel, számítógéppel 1986-tól, számítógépes grafikával 1989-tól</A></h2>
+            <h2>Első rész <A HREF="szoves-old" TARGET="_blank">Játék szövéssel, számítógéppel 1986-tól, számítógépes
+                    grafikával 1989-tól</A></h2>
 
-            <p>András fiam 35. születésnapja körül jutott eszembe, átírom egyik TV Computerre írt programomat Androidra, hiszen éppen harminc éve, hogy elkezdett vele tanulni. Ő annak a generációnak a tagja akik már ilyen környezetben szocializálódtak, jelenleg
-                játékfejlesztő egy dán és egy svéd cégnél.<br><br> Másik oka, hogy folytatom ezt az oldalt az az, hogy Princz Péterrel az Ericsson fejlesztőjével a szokások kávézásunk egyikén megmutattam ezt az Andrisnak írt Androidon futó, Processing nyelven
-                írt programomat:<br><A HREF="szalagszoves-2-6.apk" TARGET="_blank">szalagszoves-2-6.apk letöltése</A><br>és kiderült, ő is készített oktatóanyagot serdülő korú gyerekeknek ezen a nyelven:<br>
+            <p>András fiam 35. születésnapja körül jutott eszembe, átírom egyik TV Computerre írt programomat Androidra,
+                hiszen éppen harminc éve, hogy elkezdett vele tanulni. Ő annak a generációnak a tagja akik már ilyen
+                környezetben szocializálódtak, jelenleg
+                játékfejlesztő egy dán és egy svéd cégnél.<br><br> Másik oka, hogy folytatom ezt az oldalt az az, hogy
+                Princz Péterrel az Ericsson fejlesztőjével a szokások kávézásunk egyikén megmutattam ezt az Andrisnak
+                írt Androidon futó, Processing nyelven
+                írt programomat:<br><A HREF="szalagszoves-2-6.apk" TARGET="_blank">szalagszoves-2-6.apk
+                    letöltése</A><br>és kiderült, ő is készített oktatóanyagot serdülő korú gyerekeknek ezen a
+                nyelven:<br>
                 <A HREF="https://gitlab.com/princzp/4hr_processing_workshop" TARGET="_blank">4hr_processing_workshop</A>
             </p>
 
@@ -46,22 +54,46 @@
             <br>
             <h2>Történelem pár sorban, a szövéstől a mai programvezérelt számítógépekig:</h2>
 
-            <p>- 1680-1690 között készítette az osztrák Broesel az első programvezérelt szövőszéket (száz évvel Jacquard előtt)<br> - 1679-ben publikálta Leibniz a kettes számrendszert amelyről 1703-ban jelent meg könyve<br> - Ez idő tájt, 1685-ben született
-                J.S. Bach, ő zenéjében is fogékony volt a kibontakozó új szellemi irányokra, ezért szól olyan jól sok műve szintetizátoron, szinte bármilyen technikai eszközön<br> - 1725-ben Basile Bouchon Lyonban lyukszalaggal készíti a vezérlést<br>                - 1728-ban Jean-Baptiste Falcon, Bouchon segédje lyukkártyával vezérelt szövőszéket készített<br> - 1745-ben Jacques de Vaucanson teljesen automatikus, lyukszalag vezérlésű szövőgépet fejlesztett ki<br> - 1790-ben Joseph Marie Jacquard
-                az első technikatörténeti múzeumban találja meg elődei gépeit, ezeket továbbfejlesztve készült el lyukkártyás vezérlésű, bonyolultabb minták szövésére ipari termelésben alkalmas gépe<br> - 1886-ban Herman Hollerith a szövőgépekben használt
-                vezérlés alapján kitalált egy lyukkártya-feldolgozó gépet amellyel a kézi feldolgozásnál sokkal rövidebb ideig tartott az 1880-as USA népszámlálás adatait feldolgozni<br> - 1896-ban Hollerith megalapította a New York-i Tabulating Machine
+            <p>- 1680-1690 között készítette az osztrák Broesel az első programvezérelt szövőszéket (száz évvel Jacquard
+                előtt)<br> - 1679-ben publikálta Leibniz a kettes számrendszert amelyről 1703-ban jelent meg könyve<br>
+                - Ez idő tájt, 1685-ben született
+                J.S. Bach, ő zenéjében is fogékony volt a kibontakozó új szellemi irányokra, ezért szól olyan jól sok
+                műve szintetizátoron, szinte bármilyen technikai eszközön<br> - 1725-ben Basile Bouchon Lyonban
+                lyukszalaggal készíti a vezérlést<br> - 1728-ban Jean-Baptiste Falcon, Bouchon segédje lyukkártyával
+                vezérelt szövőszéket készített<br> - 1745-ben Jacques de Vaucanson teljesen automatikus, lyukszalag
+                vezérlésű szövőgépet fejlesztett ki<br> - 1790-ben Joseph Marie Jacquard
+                az első technikatörténeti múzeumban találja meg elődei gépeit, ezeket továbbfejlesztve készült el
+                lyukkártyás vezérlésű, bonyolultabb minták szövésére ipari termelésben alkalmas gépe<br> - 1886-ban
+                Herman Hollerith a szövőgépekben használt
+                vezérlés alapján kitalált egy lyukkártya-feldolgozó gépet amellyel a kézi feldolgozásnál sokkal rövidebb
+                ideig tartott az 1880-as USA népszámlálás adatait feldolgozni<br> - 1896-ban Hollerith megalapította a
+                New York-i Tabulating Machine
                 Companyt a gép gyártására, amely az IBM egyik elődje</p>
             <h2>Hollerith lyukkártyája</h2>
-            <img src="Hollerith_Punched_Card.jpg" width="600" height="269" style="float: none;" alt="Hollerith lyukkártya" title="Hollerith lyukkártya"><br><br>
-			<p class="szajhagyomany">Az írásbeliség előtt a szájhagyomány rendszeresen mondott "meséi" mindig visszanyúltak az adott nép teremtéstörténetéig, ezért a gyerekek is könnyedén el tudták helyezni magukat az élet gyökereitől a jelenig tartó folyamatban, tudták, honnan jöttek, kik ők és hová tartanak.<br>
-			Ma egyre inkább elveszítjük kapcsolatunkat történelmünk mélyebb rétegeivel, elterjedt a kulturális "eketalp betegség" amikor csak a felszínt kapirgáljuk. Ez történik, ha a programozást Lego robotokon és hasonló eszközökön keresztül kezdjük tanítani a gyerekeknek, pl. a Scratch nyelvvel "from scratch", azaz a semmiből...<br>
-			A programozást felnőttek találták ki felnőtteknek, oktatása is "felnőttes", vagyis egyszerre több absztrakciós rétegen kellene átjutniuk a gyerekeknek. Ezt hiába próbálják házikós-napocskás, katicabogár-robotos környezetbe tenni, nem fog működni, akkor sem, ha egyébként ezek a gyerekek már Lego-n szocializálódtak.<br>
-			Az emberré válás folyamán az algoritmikus gondolkodás a varrással, szövéssel alakult ki, a szövésből pedig a lyukkártyás programvezérlés, ezért érdemes ezekkel az eszközökkel is oktatni a gyerekeket, mint a fonal, szádfa, karmantyú baba, szövőszék, papír és ceruza, számítógép, ami így a lányoknak is jobban megfelel.</p>
-            <!--<h2><br><A HREF="tervezes/tervezes.html" TARGET="_blank">1. Design papíron</A><br>
-<A HREF="tervezes/tervezes.html" TARGET="_blank">2. Pixelpontos tervezés, "három szál egy ige"</A><br>
-<A HREF="tervezes/tervezes.html" TARGET="_blank">3. Építsünk plottert</A><br></h2><br>-->
-<br />
-<h1>Logo játszótér: <a HREF="jslogo" TARGET="_blank">Kipróbálható, szerkeszthető szalagminták</a></h1>
+            <img src="Hollerith_Punched_Card.jpg" width="600" height="269" style="float: none;"
+                alt="Hollerith lyukkártya" title="Hollerith lyukkártya"><br><br>
+            <p class="szajhagyomany">Az írásbeliség előtt a szájhagyomány rendszeresen mondott "meséi" mindig
+                visszanyúltak az adott nép teremtéstörténetéig, ezért a gyerekek is könnyedén el tudták helyezni magukat
+                az élet gyökereitől a jelenig tartó folyamatban, tudták, honnan jöttek, kik ők és hová tartanak.<br>
+                Ma egyre inkább elveszítjük kapcsolatunkat történelmünk mélyebb rétegeivel, elterjedt a kulturális
+                "eketalp betegség" amikor csak a felszínt kapirgáljuk. Ez történik, ha a programozást Lego robotokon és
+                hasonló eszközökön keresztül kezdjük tanítani a gyerekeknek, pl. a Scratch nyelvvel "from scratch", azaz
+                a semmiből...<br>
+                A programozást felnőttek találták ki felnőtteknek, oktatása is "felnőttes", vagyis egyszerre több
+                absztrakciós rétegen kellene átjutniuk a gyerekeknek. Ezt hiába próbálják házikós-napocskás,
+                katicabogár-robotos környezetbe tenni, nem fog működni, akkor sem, ha egyébként ezek a gyerekek már
+                Lego-n szocializálódtak.<br>
+                Az emberré válás folyamán az algoritmikus gondolkodás a varrással, szövéssel alakult ki, a szövésből
+                pedig a lyukkártyás programvezérlés, ezért érdemes ezekkel az eszközökkel is oktatni a gyerekeket, mint
+                a fonal, szádfa, karmantyú baba, szövőszék, papír és ceruza, számítógép, ami így a lányoknak is jobban
+                megfelel.</p>
+            <br />
+            <A HREF="http://oli76.hu/tvc.php" TARGET="http://oli76.hu/tvc.php">TVC emulátor download</A><br></h2><br>
+            <h2>Tartalom</h2>
+            <img src="tartalom.png" style="float: none;">
+            <h2>Szerkesztő</h2>
+            <img src="szerkeszto.png" style="float: none;">
+            <h1>Logo játszótér: <a HREF="jslogo" TARGET="_blank">Kipróbálható, szerkeszthető szalagminták</a></h1>
         </div>
     </div>
 </body>
